@@ -36,7 +36,7 @@ const App = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3001/submit-form", {
+      const response = await fetch("https://izin-form-server.onrender.com/submit-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const App = () => {
       <form
         className="box_wrapper"
         onSubmit={handleSubmit}
-        action="http://localhost:3001/submit-form"
+        action="https://izin-form-server.onrender.com/submit-form"
         method="POST"
       >
         <div className="title">PERSONEL VE İZİN BİLGİLERİ</div>
